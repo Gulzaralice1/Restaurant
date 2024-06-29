@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header contaoner -->
+    <nav class="nav">
+        <div class="navigation container">  <!---nav- container-->
+            <div class="logo_container">    <!---logo-->
+                <img src="image/logo.png" alt="logo"/>
+            </div> 
+            <div class="bar_icone">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!--1 HERO SECTION -->
+    <div class="container">
+        <div class="hero">
+            <div class="hero_img">
+                <img src="image/hero_image.png" alt="hero_img" style="width:100%;">
+            </div>
+            <div class="hero_content">
+                <div class="tag">50% off on all product</div>
+                <h1>Enjoy Your Delicious Food</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, iste corporis tempore necessitatibus inventore ex?</p>
+                <button class="explore_bt">Explore Now</button>
+            </div>
+        </div>
+
+        <!--2 SECTION -->
+        <section class="features">
+            <div class="feature">
+                <img src="icone/discount.png"/>
+                <div class="feature_contant">
+                    <h3>Discount Voucher</h3>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <div class="feature">
+                <img src="icone/delivery.png"/>
+                <div class="feature_contant">
+                    <h3>Discount Voucher</h3>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <div class="feature">
+                <img src="icone/fresh.png"/>
+                <div class="feature_contant">
+                    <h3>Discount Voucher</h3>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </div>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <div class="menu">
+            <div class="tag">Our Menu</div>
+            <h2>Explore Our Menu</h2>
+
+            <div class="grid">
+                <div class="item1">
+                  <img
+                    class="grid-image"
+                    src="menu/grid_image1.png"
+                    alt="image 1"
+                  />
+                </div>
+                <div class="item2">
+                  <img
+                    class="grid-image"
+                    src="menu/grid_image2.png"
+                    alt="image 2"
+                  />
+                </div>
+                <div class="item3">
+                  <img
+                    class="grid-image"
+                    src="menu/grid_image3.png"
+                    alt="image 3"
+                  />
+                </div>
+                <div class="item4">
+                  <img
+                    class="grid-image"
+                    src="menu/grid_image4.png"
+                    alt="image 4"
+                  />
+                </div>
+                <div class="item5">
+                  <img
+                    class="grid-image"
+                    src="menu/grid_image5.png"
+                    alt="image 5"
+                  />
+                </div>
+                <div class="item6">
+                  <img
+                    class="grid-image"
+                    src="menu/grid_image6.png"
+                    alt="image 6"
+                  />
+                </div>
+                <div class="item7">
+                  <img
+                    class="grid-image"
+                    src="menu/grid_image7.png"
+                    alt="image 6"
+                  />
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_container container">
+            <div class="footer_logo">
+                <img src="image/logo.png">
+            </div>
+            <div class="link_list">
+                <h3>Main Link</h3>
+                <ul>
+                    <li>ordre</li>
+                    <li>contact</li>
+                    <li>new order</li>
+                    <li>blog</li>
+                </ul>
+            </div>
+            <div class="link_list">
+                <h3>Support</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditons</li>
+                    <li>blog</li>
+                </ul>
+            </div>
+            <button id="mode">click me </button>
+        </div>
+    </footer>
+    <script>
+        let modebtn = document.querySelector("#mode");  //access this button 
+        let currentmode = "light";   //dark 
+
+        let body = document.querySelector("body");
+
+        modebtn.addEventListener("click", () =>{
+            // console.log("you re trying to change mode ");
+            if(currentmode === "light")
+            {
+                currentmode = "dark";
+                body.classList.add("dark");
+                body.classList.remove("light");
+            }
+            else{
+                currentmode = "light";
+                body.classList.add("light");
+                body.classList.remove("dark");
+            }
+            console.log(currentmode);
+        });
+
+    </script>
+</body>
+</html>
